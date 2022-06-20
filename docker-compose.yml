@@ -6,7 +6,6 @@ services:
       - "8080:8080"
     depends_on:
       - postgresDb:
-    condition: service_healthy
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://PostgreSQL:5432/servicetracker
       - SPRING_DATASOURCE_USERNAME=postgres

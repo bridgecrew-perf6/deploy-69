@@ -5,7 +5,7 @@ services:
     ports:
       - "8080:8080"
     depends_on:
-      -postgresDb:
+      - postgresDb:
         condition: service_healthy
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://PostgreSQL:5432/servicetracker

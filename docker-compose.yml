@@ -1,11 +1,11 @@
-version: '3.3'
+version: '3.7'
 services:
   API:
     image: 'service-visits.jar'
     ports:
       - "8080:8080"
     depends_on:
-      - postgresDb:
+      - postgresDb
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://PostgreSQL:5432/servicetracker
       - SPRING_DATASOURCE_USERNAME=postgres

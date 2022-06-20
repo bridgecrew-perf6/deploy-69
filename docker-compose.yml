@@ -7,7 +7,7 @@ services:
     depends_on:
       - postgresDb
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://PostgreSQL:5432/servicetracker
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresDb:5432/servicetracker
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=postgres
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
